@@ -19,10 +19,6 @@ def run():
     print("## Welcome to the meeting prep Crew")
     print("-----------------------------------")
 
-    os.environ['LANGCHAIN_TRACING_V2'] = 'true'
-    os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-    os.environ['LANGCHAIN_PROJECT'] = 'Meeting Prep - CrewAI.'
-
     participants = input("What are the emails for the participants (other than you) in the meeting?\n")
     context = input("What is the context of the meeting?\n")
     objective = input("What is your objective for this meeting?\n")
