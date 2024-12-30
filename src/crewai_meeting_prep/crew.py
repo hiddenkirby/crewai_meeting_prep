@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 openai_llm = LLM(
-	model="gpt-4"
+	model="o1-mini"
 )
 
 # If you want to run a snippet of code before or after the crew starts, 
