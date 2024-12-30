@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "crewai-meeting-prep"
+version = "0.1.0"
+description = "use crewai and exa to conveniently prep for a meeting agenda"
+authors = ["Ryan Kirby <hiddenkirby@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = "^0.86.0"
+exa-py = "^1.7.1"
+crewai-tools = "^0.17.0"
+langchain = "^0.3.13"
+langchain-openai = "^0.2.14"
+
+[tool.poetry.scripts]
+meeting_prep = "crewai_meeting_prep.main:run"
+run_crew     = "crewai_meeting_prep.main:run"
+train        = "crewai_meeting_prep.main:train"
+replay       = "crewai_meeting_prep.main:replay"
+test         = "crewai_meeting_prep.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

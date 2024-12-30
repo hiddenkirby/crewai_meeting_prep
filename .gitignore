@@ -1,3 +1,8 @@
+# project specific
+.env
+debug/*
+knowledge/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
